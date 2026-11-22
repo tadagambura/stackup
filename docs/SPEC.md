@@ -1,6 +1,6 @@
 # StackUp: Spec
 
-**Savings challenges you actually finish** · #1 of 33 in the build order · Very easy · Revenue potential: Medium–high · Money & Work · Source: ChatGPT + Perplexity
+**Savings challenges you actually finish** · #1 of 33 · Wave 1: Daily keepers · Used: Daily or weekly, per challenge · Very easy · Revenue potential: Medium–high · Money & Work · Source: ChatGPT + Perplexity
 
 ## One-liner
 
@@ -50,6 +50,11 @@ Prices are starting points; test before committing.
 
 Follow the portfolio guardrails: no guilt-trip notifications, no fake urgency, progress is
 never wiped, at most one notification a day by default.
+
+## AI
+
+**None.** Not needed. Plain code does everything this app does. (Portfolio rule: plain code first, code does the maths,
+cheapest model, shared budget cap, premium-gated.)
 
 ## Platform & data
 

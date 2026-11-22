@@ -2,7 +2,7 @@
 
 **Savings challenges you actually finish**
 
-> #1 of 33 in the build order · Very easy · Revenue potential: Medium–high · Money & Work
+> #1 of 33 · Wave 1: Daily keepers · Used: Daily or weekly, per challenge · Very easy · Revenue potential: Medium–high · Money & Work
 > **Build first · growth-engine pilot**
 
 ## What it is
@@ -57,6 +57,10 @@ Built on **The Progression Loop**, the portfolio's shared retention framework
 | Share | Milestone and completion cards |
 | Next step | On completion, immediately offer the next challenge (bigger, or seasonal) |
 | Cadence | Weekly + payday |
+
+## AI
+
+**None.** Not needed. Plain code does everything this app does.
 
 ## Watch-outs
 
