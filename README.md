@@ -58,6 +58,15 @@ Built on **The Progression Loop**, the portfolio's shared retention framework
 | Next step | On completion, immediately offer the next challenge (bigger, or seasonal) |
 | Cadence | Weekly + payday |
 
+## Animation and tone
+
+**Playful.** Celebrations, confetti, cute characters, satisfying sounds and mild comic reactions. Nothing tragic.
+
+- Coins drop and stack with a satisfying clink on every deposit
+- Milestones: the stack bursts into confetti; challenge complete: a trophy
+
+**Line we don't cross:** No drama about withdrawing or missing a deposit.
+
 ## AI
 
 **None.** Not needed. Plain code does everything this app does.
