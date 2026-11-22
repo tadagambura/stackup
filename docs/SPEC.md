@@ -51,12 +51,15 @@ Prices are starting points; test before committing. **Portfolio premium promise:
 Follow the portfolio guardrails: no guilt-trip notifications, no fake urgency, progress is
 never wiped, at most one notification a day by default.
 
-## Animation and tone
+## Animation and tone: five signature animations
 
 **Playful.** Celebrations, confetti, cute characters, satisfying sounds and mild comic reactions. Nothing tragic.
 
-- Coins drop and stack with a satisfying clink on every deposit
-- Milestones: the stack bursts into confetti; challenge complete: a trophy
+- Deposit: a coin drops onto the stack with a clink and the stickman fist-pumps
+- Every £100: the stack wobbles, topples into a confetti pile, and the stickman dives in like a ball pit
+- Streak freeze used: the stickman wraps the stack in a scarf and hands it a hot chocolate
+- Challenge complete: the stack grows into a skyscraper and a tiny stickman climbs it waving a £ flag
+- Opening the app on payday: the piggy bank moonwalks across the screen
 
 **Line we don't cross:** No drama about withdrawing or missing a deposit.
 
