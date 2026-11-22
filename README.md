@@ -4,11 +4,13 @@ Savings challenges you can actually finish: 52-week, £5-a-day, save £1,000 and
 
 ## Status
 
-Planning. See [`docs/SPEC.md`](docs/SPEC.md).
+Planning. #4 of 15 in the portfolio build order (very easy). See [`docs/SPEC.md`](docs/SPEC.md).
 
 ## How it makes money
 
-_TBD, see SPEC._
+- **Free:** 1 active challenge, with ads
+- **Paid:** £2.99/month or £14.99/year: unlimited challenges, custom goals, themes
+- **Ads:** Banner, never during deposit logging
 
 ## Run locally
 
