@@ -35,7 +35,7 @@ Pick a savings challenge (52-week, £5-a-day, £1,000 in 90 days, 100 envelopes,
 | Premium | £2.99/month, £14.99/year or £6.99 lifetime: unlimited goals, custom challenges, themes |
 | Ads | Banner only, never on the deposit screen |
 
-Prices are starting points; test before committing.
+Prices are starting points; test before committing. **Portfolio premium promise:** free has ads; the moment you pay you get no ads, cloud backup and storage, and sync across your devices, plus this app's extras.
 
 ## Retention: The Progression Loop
 
@@ -69,6 +69,7 @@ cheapest model, shared budget cap, premium-gated.)
 
 - **Platform:** Expo app (iOS, Android, web).
 - **Data:** On the device only. No bank connection.
+- **Backend:** None for the free version: everything lives on the phone. Premium backup and sync use the shared portfolio backend (see the master repo's HOSTING.md).
 - **Stack:** shared portfolio foundation (Expo, PostHog, RevenueCat, AdMob, shared Progression Loop module).
 
 ## Growth engine
