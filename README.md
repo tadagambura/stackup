@@ -3,7 +3,7 @@
 **Savings challenges you actually finish**
 
 > #1 of 33 · Wave 1: Daily keepers · Used: Daily or weekly, per challenge · Very easy · Revenue potential: Medium–high · Money & Work
-> **Build first · growth-engine pilot**
+> **Build first · Growth & Maintenance Engine pilot**
 
 ## What it is
 
@@ -11,7 +11,7 @@ Pick a savings challenge (52-week, £5-a-day, £1,000 in 90 days, 100 envelopes,
 
 ## Why it's in the portfolio
 
-Savings challenges already have huge search and social demand: people print paper trackers and post their progress. StackUp turns that into an app with streaks and milestones, has real subscription potential, and is the pilot app for the growth engine because its content (saving tips, challenges, progress) is endless and evergreen.
+Savings challenges already have huge search and social demand: people print paper trackers and post their progress. StackUp turns that into an app with streaks and milestones, has real subscription potential, and is the pilot app for the Growth & Maintenance Engine because its content (saving tips, challenges, progress) is endless and evergreen.
 
 ## Who it's for
 
@@ -84,4 +84,4 @@ Planning. The build spec is in [`docs/SPEC.md`](docs/SPEC.md).
 ---
 
 Part of a portfolio of 33 small consumer apps that share one codebase, one retention module
-and one marketing system ([growth-engine](https://github.com/tadagambura/growth-engine)).
+and one marketing and upkeep system ([growth-maintenance-engine](https://github.com/tadagambura/growth-maintenance-engine)).
