@@ -39,10 +39,6 @@ export const brand: Brand = {
     danger: '#FF8A80',
     focus: '#3CD39A',
   },
-  plans: [
-    { id: 'yearly', label: 'Yearly', price: '£24.99 a year', note: 'Best value: about £2.08 a month' },
-    { id: 'monthly', label: 'Monthly', price: '£3.49 a month' },
-  ],
   premiumPerks: [
     'Run as many savings challenges as you like',
     'Unlimited bills in safe-to-spend',
