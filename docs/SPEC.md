@@ -1,6 +1,6 @@
 # StackUp: Spec
 
-**Save money and learn money, one minute a day** · #1 of 31 · Wave 1: Daily keepers · Used: Daily · Very easy · Revenue potential: Medium–high · Money & Work · Source: ChatGPT + Perplexity (merges StackUp)
+**Save money and learn money, one minute a day** · #1 of 16 · Wave 1: Daily keepers · Used: Daily · Very easy · Revenue potential: Medium–high · Money & Work · Source: ChatGPT + Perplexity (merges StackUp)
 
 ## One-liner
 
