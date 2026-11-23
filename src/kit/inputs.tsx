@@ -27,9 +27,10 @@ export function MoneyField({
 }) {
   const [text, setText] = useState(value != null ? toInput(value) : '');
   const [touched, setTouched] = useState(false);
+  // Controlled: if the screen changes the value (a suggested fee, a reset), show it.
   useEffect(() => {
-    if (value == null && text !== '' && parseGBP(text) != null) setText('');
-    // only reset the text when the parent clears the value
+    const current = text.trim() === '' ? null : parseGBP(text);
+    if (value !== current) setText(value == null ? '' : toInput(value));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
   const parsed = text.trim() === '' ? null : parseGBP(text);

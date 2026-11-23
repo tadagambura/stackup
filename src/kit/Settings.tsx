@@ -17,9 +17,18 @@ import { useTheme } from './theme';
 import { Body, Card, Chip, Divider, H1, ListRow, Muted, Row, Screen, Section, Toggle } from './ui';
 
 const HOURS = [7, 8, 9, 12, 17, 19, 21];
+const WEEKDAYS = [
+  { n: 2, label: 'Mon' },
+  { n: 3, label: 'Tue' },
+  { n: 4, label: 'Wed' },
+  { n: 5, label: 'Thu' },
+  { n: 6, label: 'Fri' },
+  { n: 7, label: 'Sat' },
+  { n: 1, label: 'Sun' },
+];
 const label = (h: number) => (h === 12 ? '12pm' : h < 12 ? `${h}am` : `${h - 12}pm`);
 
-export function KitSettings({ children, reminder, onDataDeleted }: { children?: ReactNode; reminder?: { title: string; body: string; explain: string }; onDataDeleted?: () => void }) {
+export function KitSettings({ children, reminder, onDataDeleted }: { children?: ReactNode; reminder?: { title: string; body: string; explain: string; weekly?: boolean }; onDataDeleted?: () => void }) {
   const { brand } = useTheme();
   const { isPremium, mode, restore, cancelTest } = usePremium();
   const { toast, confirm } = useFeedback();
@@ -29,22 +38,24 @@ export function KitSettings({ children, reminder, onDataDeleted }: { children?: 
   const version = Constants.expoConfig?.version ?? '1.0.0';
   const reminderId = `${brand.slug}-daily`;
 
-  const setReminder = async (on: boolean, hour = prefs.reminder.hour) => {
+  const weekday = reminder?.weekly ? (prefs.reminder.weekday ?? 6) : undefined;
+  const setReminder = async (on: boolean, hour = prefs.reminder.hour, day = weekday) => {
     if (!reminder) return;
     if (!on) {
       await disableReminder(reminderId);
       prefs.setReminder({ on: false });
       return;
     }
-    const r = await enableDailyReminder({ id: reminderId, hour, minute: 0, title: reminder.title, body: reminder.body });
+    const r = await enableDailyReminder({ id: reminderId, hour, minute: 0, title: reminder.title, body: reminder.body, weekday: day });
     const err = reminderError(r);
     if (err) {
       toast(err);
       prefs.setReminder({ on: false });
       return;
     }
-    prefs.setReminder({ on: true, hour });
-    toast(`Reminder set for ${label(hour)} each day.`);
+    prefs.setReminder({ on: true, hour, weekday: day });
+    const dayName = WEEKDAYS.find((w) => w.n === day)?.label;
+    toast(day != null ? `Reminder set for ${dayName}s at ${label(hour)}.` : `Reminder set for ${label(hour)} each day.`);
   };
 
   return (
@@ -76,7 +87,14 @@ export function KitSettings({ children, reminder, onDataDeleted }: { children?: 
       {reminder ? (
         <Section title="Reminder">
           <Card>
-            <Toggle label="Daily reminder" hint={reminder.explain} value={prefs.reminder.on} onChange={(v) => setReminder(v)} testID="settings-reminder" />
+            <Toggle label={reminder.weekly ? 'Weekly reminder' : 'Daily reminder'} hint={reminder.explain} value={prefs.reminder.on} onChange={(v) => setReminder(v)} testID="settings-reminder" />
+            {prefs.reminder.on && reminder.weekly ? (
+              <Row wrap gap={8}>
+                {WEEKDAYS.map((w) => (
+                  <Chip key={w.n} label={w.label} selected={weekday === w.n} onPress={() => setReminder(true, prefs.reminder.hour, w.n)} />
+                ))}
+              </Row>
+            ) : null}
             {prefs.reminder.on ? (
               <Row wrap gap={8}>
                 {HOURS.map((h) => (

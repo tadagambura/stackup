@@ -17,7 +17,8 @@ if (remindersSupported) {
 
 export type ReminderResult = { ok: true } | { ok: false; reason: 'unsupported' | 'denied' | 'error' };
 
-export async function enableDailyReminder(opts: { id: string; hour: number; minute: number; title: string; body: string }): Promise<ReminderResult> {
+/** A daily reminder, or a weekly one when `weekday` is set (1 = Sunday … 7 = Saturday). */
+export async function enableDailyReminder(opts: { id: string; hour: number; minute: number; title: string; body: string; weekday?: number }): Promise<ReminderResult> {
   if (!remindersSupported) return { ok: false, reason: 'unsupported' };
   try {
     let { status } = await Notifications.getPermissionsAsync();
@@ -30,9 +31,12 @@ export async function enableDailyReminder(opts: { id: string; hour: number; minu
     await Notifications.scheduleNotificationAsync({
       identifier: opts.id,
       content: { title: opts.title, body: opts.body },
-      trigger: { type: Notifications.SchedulableTriggerInputTypes.DAILY, hour: opts.hour, minute: opts.minute, channelId: 'daily' },
+      trigger:
+        opts.weekday != null
+          ? { type: Notifications.SchedulableTriggerInputTypes.WEEKLY, weekday: opts.weekday, hour: opts.hour, minute: opts.minute, channelId: 'daily' }
+          : { type: Notifications.SchedulableTriggerInputTypes.DAILY, hour: opts.hour, minute: opts.minute, channelId: 'daily' },
     });
-    track('reminder_enabled', { hour: opts.hour });
+    track('reminder_enabled', { hour: opts.hour, weekly: opts.weekday != null });
     return { ok: true };
   } catch {
     return { ok: false, reason: 'error' };

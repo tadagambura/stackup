@@ -22,12 +22,11 @@ export function buildExport(app: string, version: string): string {
   return JSON.stringify({ app, version, exportedAt: new Date().toISOString(), data }, null, 2);
 }
 
-export async function exportData(app: string, version: string): Promise<{ ok: boolean; message: string }> {
-  const json = buildExport(app, version);
-  const name = `${app}-export-${new Date().toISOString().slice(0, 10)}.json`;
+/** Save or share a text file: a download on web, the share sheet on phones. */
+export async function exportFile(name: string, content: string, mimeType: string): Promise<{ ok: boolean; message: string }> {
   try {
     if (Platform.OS === 'web') {
-      const blob = new Blob([json], { type: 'application/json' });
+      const blob = new Blob([content], { type: mimeType });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -38,15 +37,20 @@ export async function exportData(app: string, version: string): Promise<{ ok: bo
       const file = new File(Paths.cache, name);
       if (file.exists) file.delete();
       file.create();
-      file.write(json);
+      file.write(content);
       if (!(await Sharing.isAvailableAsync())) return { ok: false, message: "Sharing isn't available on this device." };
-      await Sharing.shareAsync(file.uri, { mimeType: 'application/json', dialogTitle: 'Export your data' });
+      await Sharing.shareAsync(file.uri, { mimeType, dialogTitle: name });
     }
-    track('data_exported');
     return { ok: true, message: 'Export ready.' };
   } catch {
     return { ok: false, message: "Couldn't export. Please try again." };
   }
+}
+
+export async function exportData(app: string, version: string): Promise<{ ok: boolean; message: string }> {
+  const r = await exportFile(`${app}-export-${new Date().toISOString().slice(0, 10)}.json`, buildExport(app, version), 'application/json');
+  if (r.ok) track('data_exported', { format: 'json' });
+  return r;
 }
 
 export function deleteAllData(app: string) {
