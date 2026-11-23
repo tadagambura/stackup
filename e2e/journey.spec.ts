@@ -110,14 +110,26 @@ test('settings: delete all data really deletes it', async ({ page }) => {
   await expect(page.getByText('No stacks yet')).toBeVisible();
 });
 
-test('themes: switch theme in Settings and it sticks; lesson library locks after 20 free cards', async ({ page }) => {
+test('themes: six free themes stick, Premium ones open the paywall; lesson library locks after 20 free cards', async ({ page }) => {
   await page.goto('/');
   await finishIntro(page);
   await page.goto('/settings');
-  await page.getByTestId('theme-burgundy').click();
-  await expect(page.getByTestId('theme-burgundy')).toHaveAttribute('aria-checked', 'true');
+  await page.getByTestId('theme-navy').click();
+  await expect(page.getByTestId('theme-navy')).toHaveAttribute('aria-checked', 'true');
   await page.reload();
-  await expect(page.getByTestId('theme-burgundy')).toHaveAttribute('aria-checked', 'true');
+  await expect(page.getByTestId('theme-navy')).toHaveAttribute('aria-checked', 'true');
+  await page.getByTestId('theme-gold').click();
+  await expect(page.getByTestId('paywall')).toBeVisible();
+  await expect(page.getByTestId('theme-navy')).toHaveAttribute('aria-checked', 'true');
+  await page.goto('/settings');
+  await page.getByTestId('settings-premium').click();
+  await page.getByTestId('paywall-buy').click();
+  await expect(page.getByTestId('paywall-success')).toBeVisible();
+  await page.getByTestId('paywall-done').click();
+  await page.getByTestId('theme-gold').click();
+  await expect(page.getByTestId('theme-gold')).toHaveAttribute('aria-checked', 'true');
+  await page.getByTestId('test-reset').click();
+  await expect(page.getByTestId('theme-navy')).toHaveAttribute('aria-checked', 'false');
   await page.goto('/learn');
   await expect(page.getByTestId('cards-progress')).toContainText('20 free');
   await page.getByTestId('card-l21').click();
