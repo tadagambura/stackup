@@ -48,6 +48,7 @@ export function PaywallSheet({ visible, onClose, reason }: { visible: boolean; o
                     key={p.id}
                     accessibilityRole="radio"
                     accessibilityState={{ checked: on }}
+                    aria-checked={on}
                     accessibilityLabel={`${p.label}, ${p.price}${p.note ? `, ${p.note}` : ''}`}
                     onPress={() => setPlan(p.id)}
                     testID={`plan-${p.id}`}
