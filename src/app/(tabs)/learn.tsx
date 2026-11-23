@@ -9,6 +9,8 @@ import { useTheme } from '@/kit/theme';
 import { Body, Button, Card, Chip, H1, H2, Label, Muted, Note, ProgressBar, Row, Screen, Section, Stack, Strong } from '@/kit/ui';
 import { lessonForDay, levelFor } from '@/domain/lessons';
 import { pack } from '@/content/lessons';
+import { CardLibrary, FREE_CARDS, type CardPack } from '@/kit/cards';
+import { usePremium } from '@/kit/premium';
 import { useLearn } from '@/state/stores';
 
 export default function Learn() {
@@ -20,7 +22,10 @@ export default function Learn() {
     learn.ensureStarted();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const lesson = lessonForDay(pack, learn.firstDay ?? today, today);
+  const { isPremium } = usePremium();
+  const daily = isPremium ? pack : { ...pack, lessons: pack.lessons.slice(0, FREE_CARDS) };
+  const lesson = lessonForDay(daily, learn.firstDay ?? today, today);
+  const library: CardPack = { pack: pack.pack, version: pack.version, checked: pack.checked, reviewed: pack.reviewed, cards: pack.lessons };
   const answered = learn.answers[today];
   const [picked, setPicked] = useState<number | null>(null);
   const lvl = levelFor(learn.xp);
@@ -111,6 +116,10 @@ export default function Learn() {
           })}
         </Section>
       ) : null}
+
+      <Section title="All money lessons">
+        <CardLibrary pack={library} app="stackup" />
+      </Section>
 
       <Label>General information, not financial advice</Label>
       <Muted>{"Lessons explain how money things work in the UK. They can't tell you what's right for you. For free, impartial help, try MoneyHelper."}</Muted>
