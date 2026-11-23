@@ -1,0 +1,608 @@
+{
+  "pack": "stackup-core-1",
+  "version": 1,
+  "checked": "2026-11-23",
+  "reviewed": false,
+  "lessons": [
+    {
+      "id": "l01",
+      "topic": "Budgeting",
+      "title": "Find your safe-to-spend",
+      "body": "Knowing what's safe to spend starts with seeing where your money goes. MoneyHelper suggests a spending diary for four weeks, or looking back at last month's card statement. Then add up your income, list your essential bills and other spending, and take spending away from income. What's left is what you can spend or stack. No guilt, just a clearer picture.",
+      "quiz": {
+        "q": "According to MoneyHelper, what's a quick way to see where your money went?",
+        "options": [
+          "Guess from memory",
+          "Look back at last month's card statement",
+          "Check your balance on payday only"
+        ],
+        "answer": 1,
+        "explain": "MoneyHelper suggests a four-week spending diary or reviewing last month's statement. Real numbers beat guesses and make a budget much easier to build."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/everyday-money/budgeting/beginners-guide-to-managing-your-money"
+      }
+    },
+    {
+      "id": "l02",
+      "topic": "Payslips",
+      "title": "Decode your tax code",
+      "body": "Your tax code tells your employer how much tax-free income you get from that job. 1257L is the code used for most people with one job or pension. HMRC starts with your tax-free Personal Allowance (the standard one is £12,570 in the 2026 to 2027 tax year), takes off any deductions, then swaps the last digit for a letter. L means you get the standard allowance.",
+      "quiz": {
+        "q": "What does the L in 1257L mean?",
+        "options": [
+          "You're on an emergency tax code",
+          "You pay the higher rate of tax",
+          "You get the standard tax-free Personal Allowance"
+        ],
+        "answer": 2,
+        "explain": "L means you're entitled to the standard tax-free Personal Allowance. Emergency codes look different: they end in W1, M1 or X."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/tax-codes/what-your-tax-code-means"
+      }
+    },
+    {
+      "id": "l03",
+      "topic": "Emergency funds",
+      "title": "Build a rainy-day buffer",
+      "body": "An emergency fund is money for surprises like a broken boiler, or tougher times like losing work. MoneyHelper's rule of thumb is three to six months' essential outgoings in an instant access savings account. Spend £1,000 a month on essentials? That's £3,000 to £6,000. If that feels miles away, that's fine: any amount saved helps, and small regular top-ups build the habit.",
+      "quiz": {
+        "q": "Where does MoneyHelper suggest keeping emergency savings?",
+        "options": [
+          "In an instant access savings account",
+          "In a fixed-term account you can't touch",
+          "As cash in your wallet"
+        ],
+        "answer": 0,
+        "explain": "Emergencies don't wait, so you need to reach the money fast. MoneyHelper's rule of thumb is three to six months' essentials in an instant access account."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/savings/types-of-savings/emergency-savings-how-much-is-enough"
+      }
+    },
+    {
+      "id": "l04",
+      "topic": "Scams",
+      "title": "Tricked into a bank transfer?",
+      "body": "Authorised push payment (APP) fraud is when a scammer tricks you into sending money to their account. For UK Faster Payments and CHAPS transfers made since 7 October 2024, if you're eligible your payment provider must refund up to £85,000, usually within 5 working days. They might keep back the first £100. If it happens, contact your bank immediately and report it to Report Fraud.",
+      "quiz": {
+        "q": "You realise you've just paid a scammer by bank transfer. What comes first?",
+        "options": [
+          "Wait a week to see if it comes back",
+          "Message the scammer asking for it back",
+          "Contact your bank straight away"
+        ],
+        "answer": 2,
+        "explain": "The FCA says contact your bank or payment provider immediately, using the details on your card or statements. Then report it and keep records."
+      },
+      "source": {
+        "name": "FCA",
+        "url": "https://www.fca.org.uk/consumers/fraudulent-payments"
+      }
+    },
+    {
+      "id": "l05",
+      "topic": "Savings challenges",
+      "title": "Try the 52-week challenge",
+      "body": "The 52-week challenge is simple maths: save £1 in week one, £2 in week two, and so on up to £52 in week 52. Stick with it and you'll have £1,378 after a year. Big weeks near the end? Do it backwards, or try a pennies version (1p up to 52p, £13.78 in total). MoneyHelper says committing to a regular weekly amount beats saving whatever's left over.",
+      "quiz": {
+        "q": "On the 52-week challenge starting at £1, how much do you save in week 10?",
+        "options": [
+          "£10",
+          "£1",
+          "£52"
+        ],
+        "answer": 0,
+        "explain": "Each week you save £1 times the week number, so week 10 is £10. All 52 weeks together add up to £1,378."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/savings/types-of-savings/saving-money-for-christmas"
+      }
+    },
+    {
+      "id": "l06",
+      "topic": "Credit",
+      "title": "What helps your credit score",
+      "body": "Lenders look at your credit report to decide whether to lend to you and at what rate. Four credit reference agencies keep reports, and checking yours is free. Habits that help: being registered to vote at your current address, paying bills on time (Direct Debits can help) and staying within any agreed overdraft. Missed payments usually stay on your report for six years.",
+      "quiz": {
+        "q": "Which kind of credit check does NOT affect your credit score?",
+        "options": [
+          "A hard check when you apply for credit",
+          "A soft check, like an eligibility checker",
+          "Both affect it the same"
+        ],
+        "answer": 1,
+        "explain": "Soft checks don't affect your score. Hard checks happen when you apply, and lots in a short time can make lenders think you rely on borrowing."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/everyday-money/credit/how-to-improve-your-credit-score"
+      }
+    },
+    {
+      "id": "l07",
+      "topic": "Interest and AER",
+      "title": "AER and APR, explained",
+      "body": "Two acronyms make comparing easier. AER (Annual Equivalent Rate) is the total interest you'd get on savings in one year: the higher it is, the more you earn. APR (Annual Percentage Rate) is the total interest, including any charges or fees, you'd pay on borrowing in a year: the higher it is, the more you pay. MoneyHelper's tip: always look for the AER or APR to compare.",
+      "quiz": {
+        "q": "Account A pays 3% AER and account B pays 4% AER. Same balance, one year: which earns more?",
+        "options": [
+          "Account A",
+          "They earn the same",
+          "Account B"
+        ],
+        "answer": 2,
+        "explain": "AER shows the total interest you'd receive on savings in a year, so the higher AER earns more on the same balance."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/savings/types-of-savings/how-to-choose-between-saving-and-borrowing"
+      }
+    },
+    {
+      "id": "l08",
+      "topic": "Subscriptions",
+      "title": "Stop a card subscription",
+      "body": "Let a company take future card payments, say for a gym, a magazine or a free trial about to turn paid? That's a 'continuous payment authority'. The law lets you stop a future payment up to the end of business the day before it's due. Tell your card issuer by phone, email or letter; they can't insist you ask the company first. You may still owe the money.",
+      "quiz": {
+        "q": "Who can you ask to stop a future card payment to a subscription?",
+        "options": [
+          "Your card issuer, such as your bank",
+          "Only the company taking the money",
+          "Nobody until the contract ends"
+        ],
+        "answer": 0,
+        "explain": "Citizens Advice says your card issuer must stop the payments if you ask by the end of business the day before. They can't make you ask the company first."
+      },
+      "source": {
+        "name": "Citizens Advice",
+        "url": "https://www.citizensadvice.org.uk/debt-and-money/banking/stopping-a-future-payment-on-your-debit-or-credit-card/"
+      }
+    },
+    {
+      "id": "l09",
+      "topic": "Payday planning",
+      "title": "Pay yourself first",
+      "body": "A simple payday habit: set up a standing order so savings move automatically, such as just after payday or every Friday. MoneyHelper suggests starting with less than you can afford. If £20 is usually left each month, save £10 for the first month or two, then build up. Check the money's there the day before it leaves, so other bills aren't caught short.",
+      "quiz": {
+        "q": "You usually have £20 left each month. What does MoneyHelper suggest saving at first?",
+        "options": [
+          "All £20",
+          "£10, then increase when you can",
+          "Nothing until you earn more"
+        ],
+        "answer": 1,
+        "explain": "Starting with less than you can afford leaves a small safety net, so you're less likely to take money back out of savings. You can increase it later."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/savings/how-to-save/getting-into-the-savings-habit"
+      }
+    },
+    {
+      "id": "l10",
+      "topic": "ISAs",
+      "title": "ISAs in a nutshell",
+      "body": "An ISA (Individual Savings Account) lets you save tax-free. In the 2026 to 2027 tax year, the most you can save across all your ISAs is £20,000. There are four types: cash ISA, stocks and shares ISA, innovative finance ISA and Lifetime ISA. You must be 18 or over to open one (and under 40 for a Lifetime ISA), and you can't hold an ISA jointly with someone else.",
+      "quiz": {
+        "q": "What's the most you can save in ISAs in the 2026 to 2027 tax year?",
+        "options": [
+          "£5,000",
+          "£10,000",
+          "£20,000"
+        ],
+        "answer": 2,
+        "explain": "GOV.UK says the maximum you can save in ISAs in the 2026 to 2027 tax year is £20,000 in total."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/individual-savings-accounts"
+      }
+    },
+    {
+      "id": "l11",
+      "topic": "Inflation",
+      "title": "Why prices creep up",
+      "body": "Inflation is when prices rise, and the rate of inflation is how quickly they rise. Every month the Office for National Statistics checks the prices of about 700 items, from bread to bus tickets. If CPI inflation is 2%, a basket that cost £100 a year ago costs £102 today. The government's target is 2%, and the Bank of England's main tool for keeping it there is interest rates.",
+      "quiz": {
+        "q": "If CPI inflation is 2%, what does last year's £100 basket cost now?",
+        "options": [
+          "£98",
+          "£102",
+          "£120"
+        ],
+        "answer": 1,
+        "explain": "2% of £100 is £2, so the basket costs £102. When prices rise quickly, the same money buys less."
+      },
+      "source": {
+        "name": "Bank of England",
+        "url": "https://www.bankofengland.co.uk/explainers/what-is-inflation"
+      }
+    },
+    {
+      "id": "l12",
+      "topic": "Priority debts",
+      "title": "Which debts come first",
+      "body": "Some debts cause bigger problems if they go unpaid, so Citizens Advice calls them 'priority debts' and says to deal with them first. In England they include rent or mortgage arrears, council tax, gas and electricity, TV licence, court fines and child maintenance. Credit and store cards, catalogues, payday loans and water bills are non-priority. Your water supply can't be cut off for not paying.",
+      "quiz": {
+        "q": "Which of these is a priority debt?",
+        "options": [
+          "Council tax arrears",
+          "A store card balance",
+          "Money owed to a friend"
+        ],
+        "answer": 0,
+        "explain": "Council tax arrears can lead to court action, so they're a priority. Store cards and money owed to family or friends are non-priority debts."
+      },
+      "source": {
+        "name": "Citizens Advice",
+        "url": "https://www.citizensadvice.org.uk/debt-and-money/help-with-debt/dealing-with-your-debts/work-out-which-debts-to-deal-with-first/"
+      }
+    },
+    {
+      "id": "l13",
+      "topic": "Credit",
+      "title": "Buy Now Pay Later's new rules",
+      "body": "Since 15 July 2026, interest-free Buy Now Pay Later, officially called Deferred Payment Credit, is regulated by the FCA when the lender is a different business from the shop. Lenders must check you can afford it, tell you repayment dates and any late fees up front, and support you if you're struggling. Agreements made before 15 July 2026, or offered by the shop itself, aren't covered.",
+      "quiz": {
+        "q": "Which Buy Now Pay Later agreement is covered by the new FCA rules?",
+        "options": [
+          "One from the shop's own scheme",
+          "One from a separate lender, taken out on or after 15 July 2026",
+          "One taken out in May 2026"
+        ],
+        "answer": 1,
+        "explain": "Deferred Payment Credit is regulated when the lender and the seller are different businesses. Agreements before 15 July 2026, or provided by the seller itself, aren't."
+      },
+      "source": {
+        "name": "FCA",
+        "url": "https://www.fca.org.uk/consumers/buy-now-pay-later"
+      }
+    },
+    {
+      "id": "l14",
+      "topic": "Payslips",
+      "title": "Your payslip rights",
+      "body": "If you're an employee or worker, your employer must give you a payslip, printed or online, on or before payday. It must show your pay before and after deductions, any deductions that change each time (like tax and National Insurance), and your hours if your pay varies with time worked. Payslips can also prove your earnings, tax paid and pension contributions.",
+      "quiz": {
+        "q": "When must your employer give you a payslip?",
+        "options": [
+          "Within a month after payday",
+          "Only if you ask for one",
+          "On or before payday"
+        ],
+        "answer": 2,
+        "explain": "GOV.UK says payslips must be provided on or before payday. Employers can choose whether they're printed or electronic."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/payslips"
+      }
+    },
+    {
+      "id": "l15",
+      "topic": "Savings challenges",
+      "title": "The jam jar method",
+      "body": "The jam jar (or envelope) method splits your money into pots: one for each bill or cost, plus a 'wants' jar for fun money. Once fun money's spent, set a clear rule not to dip into the other jars. You can use real envelopes or digital pots, with standing orders moving money a day or two after payday. Money left at the end? Put it towards your emergency fund.",
+      "quiz": {
+        "q": "With the jam jar method, what happens once your 'wants' jar is empty?",
+        "options": [
+          "You take a bit from the bills jar",
+          "You leave the other jars alone",
+          "You top it up on a credit card"
+        ],
+        "answer": 1,
+        "explain": "MoneyHelper suggests a clear rule: once fun money's gone, don't dip into the other jars. That keeps bills covered and helps avoid overspending."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/everyday-money/budgeting/managing-your-money-using-the-jam-jar-approach"
+      }
+    },
+    {
+      "id": "l16",
+      "topic": "Scams",
+      "title": "Spot the pressure",
+      "body": "Scammers can sound convincing, but the warning signs are often the same. Was the contact unexpected? Are you being pushed to act fast? Does it sound too good to be true, or are they flattering you or making you worried or excited? If any answer is yes, the FCA says hang up or ignore it. A genuine bank or business won't mind waiting while you think.",
+      "quiz": {
+        "q": "A caller says you must act right now or lose out. What does the FCA say?",
+        "options": [
+          "Hang up: pressure to act fast is a warning sign",
+          "Go ahead if they know your name",
+          "Real firms always need instant decisions"
+        ],
+        "answer": 0,
+        "explain": "The FCA lists pressure to act quickly as a red flag. Don't assume a caller is genuine just because they know some basic information about you."
+      },
+      "source": {
+        "name": "FCA",
+        "url": "https://www.fca.org.uk/consumers/protect-yourself-scams"
+      }
+    },
+    {
+      "id": "l17",
+      "topic": "Student loans",
+      "title": "How student loan repayments work",
+      "body": "Student loan repayments depend on what you earn, not what you owe. You repay 9% of income over your plan's threshold (in the 2026 to 2027 tax year, £29,385 a year for Plan 2 and £25,000 for Plan 5), or 6% for a Postgraduate Loan. Bonuses and overtime count as income. Interest is still added even when you earn below the threshold.",
+      "quiz": {
+        "q": "On Plan 2, you're paid £2,748 this month and the monthly threshold is £2,448. What's repaid?",
+        "options": [
+          "£300",
+          "£27",
+          "£247"
+        ],
+        "answer": 1,
+        "explain": "You repay 9% of income over the threshold. £2,748 minus £2,448 is £300, and 9% of £300 is £27."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/repaying-your-student-loan/what-you-pay"
+      }
+    },
+    {
+      "id": "l18",
+      "topic": "Interest and AER",
+      "title": "Interest on your interest",
+      "body": "Compound interest means you earn interest on your original savings and on the interest already added. MoneyHelper's example: £1,000 at 4% becomes £1,040 after one year, £1,082 after two and about £1,217 after five. The longer you save, the more compounding helps. Real results can differ if the rate changes or your balance goes up and down.",
+      "quiz": {
+        "q": "Why does compound interest grow savings faster over time?",
+        "options": [
+          "You earn interest on interest already added",
+          "The rate always rises each year",
+          "Banks add a yearly bonus"
+        ],
+        "answer": 0,
+        "explain": "Each period's interest joins your balance, so the next lot of interest is worked out on a bigger amount. The effect grows the longer you save."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/savings/how-to-save/interest-rates-explained"
+      }
+    },
+    {
+      "id": "l19",
+      "topic": "Overdrafts",
+      "title": "Overdrafts are borrowing",
+      "body": "Going into your overdraft means borrowing from your bank. Since April 2020, overdraft interest is charged at a single annual rate, and banks can't charge higher fees for unarranged overdrafts. MoneyHelper says rates range from 19% to 40% or more, so overdrafts work best for emergencies or short-term use. Low-balance text alerts can help you see it coming.",
+      "quiz": {
+        "q": "Since April 2020, how is overdraft interest charged?",
+        "options": [
+          "A daily fixed fee",
+          "Higher fees if it's unarranged",
+          "A single annual interest rate"
+        ],
+        "answer": 2,
+        "explain": "Overdrafts now use one annual interest rate (APR), and banks can't charge higher fees for unarranged overdrafts. That makes accounts easier to compare."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/everyday-money/credit/overdrafts-explained"
+      }
+    },
+    {
+      "id": "l20",
+      "topic": "Payslips",
+      "title": "National Insurance on your pay",
+      "body": "If you're employed, National Insurance (NI) comes out of your wages along with tax, and your payslip shows it. In the 2026 to 2027 tax year, most employees pay 8% on earnings between £1,048 and £4,189 a month, and 2% on anything above £4,189. Your employer works it out and takes it before you're paid. Self-employed people pay NI differently.",
+      "quiz": {
+        "q": "In 2026/27, what NI rate do most employees pay on monthly earnings between £1,048 and £4,189?",
+        "options": [
+          "8%",
+          "2%",
+          "20%"
+        ],
+        "answer": 0,
+        "explain": "Most employees pay 8% Class 1 National Insurance in that band in 2026/27, then 2% on earnings over £4,189 a month."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/national-insurance/how-much-you-pay"
+      }
+    },
+    {
+      "id": "l21",
+      "topic": "Scams",
+      "title": "'New bank details'? Pause",
+      "body": "Some bank transfer scams strike when you're already expecting to pay: a house deposit, a holiday or building work. Scammers may hack or intercept emails, then send 'new' payment details and pressure you to act fast. Check with the organisation directly through its official website, not links in the message. Already sent money? Contact your bank immediately using the number on your card, or call 159.",
+      "quiz": {
+        "q": "An email with 'updated' bank details arrives just before you pay a deposit. What's safest?",
+        "options": [
+          "Pay quickly so you don't lose out",
+          "Check with the company via its official website first",
+          "Reply to the email to confirm"
+        ],
+        "answer": 1,
+        "explain": "MoneyHelper warns scammers intercept emails and send new payment details. Go directly to the organisation's official website to check, and don't click links in the message."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/money-troubles/scams/types-of-scam"
+      }
+    },
+    {
+      "id": "l22",
+      "topic": "ISAs",
+      "title": "Lifetime ISA: the bonus and the catch",
+      "body": "A Lifetime ISA gets a 25% government bonus, but money only comes out charge-free if you're buying your first home, are 60 or over, or are terminally ill. Any other withdrawal costs 25%. GOV.UK's example (assuming no growth): save £800, get a £200 bonus, take the £1,000 out and you're left with £750, less than you paid in. First homes over £450,000 face a 20% charge.",
+      "quiz": {
+        "q": "You saved £800 and got the £200 bonus. You withdraw all £1,000 for another reason. What's left?",
+        "options": [
+          "£1,000",
+          "£800",
+          "£750"
+        ],
+        "answer": 2,
+        "explain": "The 25% charge applies to the full £1,000, bonus included, so £250 goes. You'd get £750, which is less than the £800 you put in."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/lifetime-isa/withdrawing-money-from-your-lifetime-isa"
+      }
+    },
+    {
+      "id": "l23",
+      "topic": "Budgeting",
+      "title": "Sinking funds for known costs",
+      "body": "A sinking fund is a pot you pay into regularly for a cost you know is coming: Christmas, birthdays, an MOT or an annual insurance bill. List what's due in the next 12 months, estimate each cost (saving 10% extra helps if prices rise), then divide by the paydays left. A standing order just after payday means you pay yourself first. Five funds or fewer keeps it simple.",
+      "quiz": {
+        "q": "An MOT and service costing £240 is due in 6 months. Paid monthly, how much per payday?",
+        "options": [
+          "£20",
+          "£60",
+          "£40"
+        ],
+        "answer": 2,
+        "explain": "Divide the total by the paydays before it's due: £240 divided by 6 is £40. MoneyHelper suggests saving a little extra in case prices go up."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/blog/everyday-money/sinking-funds-explained"
+      }
+    },
+    {
+      "id": "l24",
+      "topic": "Bills",
+      "title": "Behind on energy bills?",
+      "body": "Struggling with gas or electricity bills? Citizens Advice says contact your supplier. They have to help you find a solution, like a payment plan based on what you can afford. Example: £400 owed could be paid at £10 a week, plus £30 a week for the energy you use now. In England, energy arrears are a priority debt, so they come before debts like credit cards.",
+      "quiz": {
+        "q": "Energy arrears or a credit card bill: which does Citizens Advice say to pay first?",
+        "options": [
+          "The credit card",
+          "The energy arrears",
+          "Whichever is bigger"
+        ],
+        "answer": 1,
+        "explain": "Energy arrears are a priority debt, so Citizens Advice says to pay them before debts like credit cards. Your supplier has to help you agree a plan."
+      },
+      "source": {
+        "name": "Citizens Advice",
+        "url": "https://www.citizensadvice.org.uk/consumer/energy/energy-supply/get-help-paying-your-bills/struggling-to-pay-your-energy-bills/"
+      }
+    },
+    {
+      "id": "l25",
+      "topic": "Payslips",
+      "title": "Emergency tax code?",
+      "body": "New job, and your tax code ends in W1, M1 or X, or your payslip says NONCUM? That's an emergency tax code. Tax is worked out on that week's or month's pay only, as if you earned it every period, so you could pay the wrong amount. Giving your new employer your P45 helps. HMRC then updates your code, which can take up to 35 days.",
+      "quiz": {
+        "q": "Which tax code ending means you're on an emergency code?",
+        "options": [
+          "L",
+          "K",
+          "M1"
+        ],
+        "answer": 2,
+        "explain": "Codes ending in W1, M1 or X (or NONCUM on a payslip) are emergency codes. If you overpay tax while on one, you can get a refund."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/tax-codes/emergency-tax-codes"
+      }
+    },
+    {
+      "id": "l26",
+      "topic": "Scams",
+      "title": "'Easy money' for your account",
+      "body": "Some 'jobs' or offers ask you to receive money into your personal bank account and send it on elsewhere. That's money muling, a form of money laundering, and MoneyHelper says it could leave you facing criminal charges. Job scammers often get in touch out of the blue, use messaging apps and push you to act fast. If an offer asks you to move money, stop immediately.",
+      "quiz": {
+        "q": "A job offer asks you to receive money into your account and transfer it on. What is this?",
+        "options": [
+          "A normal payroll task",
+          "Money muling, which is money laundering",
+          "An easy, legal way to earn commission"
+        ],
+        "answer": 1,
+        "explain": "Receiving money and passing it on for someone else is money muling. MoneyHelper says stop immediately, as it could lead to criminal charges."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/money-troubles/scams/types-of-scam"
+      }
+    },
+    {
+      "id": "l27",
+      "topic": "Payslips",
+      "title": "Know your minimum wage",
+      "body": "From April 2026 the minimum hourly pay is £12.71 if you're 21 or over (the National Living Wage), £10.85 at 18 to 20, and £8 for under-18s and apprentices. The apprentice rate applies if you're under 19 or in your apprenticeship's first year. Rates change every April: from April 2027 they rise to £13.21, £11.27 and £8.31.",
+      "quiz": {
+        "q": "You're 22 and not an apprentice. What's your minimum hourly rate from April 2026?",
+        "options": [
+          "£12.71",
+          "£10.85",
+          "£13.21"
+        ],
+        "answer": 0,
+        "explain": "Workers aged 21 and over get the National Living Wage: £12.71 an hour from April 2026, rising to £13.21 from April 2027."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/national-minimum-wage-rates"
+      }
+    },
+    {
+      "id": "l28",
+      "topic": "Debt help",
+      "title": "Debt help is free",
+      "body": "If debt feels heavy, you're not alone, and good debt advice is free. MoneyHelper's Debt advice locator finds free, confidential help online, by phone or near you. Advisers won't judge you. They can suggest options you might not know about and check you're getting the benefits you're entitled to. Getting help quickly matters most if bailiffs or a court summons are involved.",
+      "quiz": {
+        "q": "What does MoneyHelper's Debt advice locator help you find?",
+        "options": [
+          "Free, confidential debt advice",
+          "Paid debt-clearing firms",
+          "New loans to cover your debts"
+        ],
+        "answer": 0,
+        "explain": "It points you to free, confidential debt advice online, by phone or face to face. Advisers never judge you and can show you options."
+      },
+      "source": {
+        "name": "MoneyHelper",
+        "url": "https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/help-if-youre-struggling-with-debt"
+      }
+    },
+    {
+      "id": "l29",
+      "topic": "Pensions",
+      "title": "Your workplace pension",
+      "body": "If you're automatically enrolled in a workplace pension, the legal minimum going in is 8% of your earnings (in most schemes, earnings between £6,240 and £50,270 a year): at least 3% from your employer, with you paying the rest. Tax relief usually adds more. GOV.UK's example: you put in £40, your employer £30 and tax relief £10, so £80 goes in. It does lower take-home pay.",
+      "quiz": {
+        "q": "Under auto-enrolment minimums, what's the least your employer must pay in?",
+        "options": [
+          "3%",
+          "5%",
+          "8%"
+        ],
+        "answer": 0,
+        "explain": "The minimum total is 8%: at least 3% from your employer and 5% from you. Some schemes' rules mean employers pay more."
+      },
+      "source": {
+        "name": "GOV.UK",
+        "url": "https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay"
+      }
+    },
+    {
+      "id": "l30",
+      "topic": "Savings",
+      "title": "Is my money protected?",
+      "body": "If a UK bank, building society or credit union authorised by the PRA goes bust, the Financial Services Compensation Scheme (FSCS) protects eligible deposits up to £120,000 per person, per firm. That includes current accounts, savings accounts and cash ISAs. The limit rose from £85,000 on 1 December 2025. Brands owned by the same firm share one limit.",
+      "quiz": {
+        "q": "What's the FSCS deposit protection limit per person, per firm?",
+        "options": [
+          "£85,000",
+          "£1 million",
+          "£120,000"
+        ],
+        "answer": 2,
+        "explain": "Since 1 December 2025, eligible deposits are protected up to £120,000 per person, per firm. A joint account with two holders is covered up to £240,000."
+      },
+      "source": {
+        "name": "Bank of England",
+        "url": "https://www.bankofengland.co.uk/explainers/what-is-the-financial-services-compensation-scheme"
+      }
+    }
+  ]
+}
