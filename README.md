@@ -1,49 +1,49 @@
 # StackUp
 
-**Save money and learn money, one minute a day**
+**Know what's safe to spend, then stack the rest**
 
-> #1 of 16 · Wave 1: Daily keepers · Used: Daily · Very easy · Revenue potential: Medium–high · Money & Work
+> #1 of 15 · Wave 1: Daily keepers · Used: Daily · Very easy · Revenue potential: Medium–high · Money & Work
 > **Build first · Growth & Maintenance Engine pilot**
 
 ## What it is
 
-Pick a savings challenge (52-week, £5-a-day, £1,000 in 90 days, 100 envelopes, no-spend weekends), log what you put away and watch the stack grow. Every day there's also a one-minute money lesson or quiz (budgeting, saving, credit, pensions, tax, scams) with XP and levels, inspired by the ideas in Morgan Housel's The Psychology of Money and checked against trusted UK sources. Learn something, then do something: each lesson ends with an action in your challenge. No bank connection; you log deposits yourself.
+Two questions, one money app. First: what can I safely spend before payday? Set your pay schedule and bills, and StackUp shows safe-to-spend for today, this week and until payday, with an 'can I afford £X?' check and every subscription and renewal in one place. Second: how do I actually save? Pick a challenge (52-week, £5-a-day, 100 envelopes, £1,000 in 90 days, no-spend weekends) and stack money in one tap; anything left before payday can be stacked too. Every day there's also a one-minute money lesson or quiz with XP and levels. No bank linking: your numbers stay on your phone.
 
 ## Why it's in the portfolio
 
-Saving and understanding money are the same habit. Savings challenges already have huge search and social demand, and a daily lesson gives a reason to open the app every day even when there's nothing to deposit, which is the strongest retention driver in the portfolio. One app instead of two means one brand to grow, one store listing and twice the reasons to come back. Still the pilot app for the Growth & Maintenance Engine: its content (saving tips, challenges, money lessons) is endless and evergreen.
+Safe-to-spend and savings challenges serve the same person at the same moment, so they work better as one app: 'you've got £14 left before payday, stack £5 of it?' turns leftovers into savings. Standalone challenge trackers are mostly free, which makes them hard to charge for, while Emma charges £4.99 to £14.99 a month for safe-to-spend, bills and subscriptions with a bank link. StackUp offers the useful parts without linking a bank, for much less. Savings challenges are huge on TikTok (cash stuffing has 3B+ views) yet the challenge apps themselves are tiny: an opening.
 
 ## Who it's for
 
-Young adults who are saving for something and feel behind on money basics.
+UK young adults and anyone living payday to payday who wants to stop running out of money and finally save something, without handing an app their bank login.
 
-**The problem:** Saving feels abstract and slow, and money advice is long and overwhelming. Paper trackers get lost and nobody explains the 'why'.
+**The problem:** Money runs out before payday, subscriptions sneak up, and saving feels impossible or boring.
 
 ## Version one
 
-- Prebuilt challenges: 52-week, £5-a-day, save £500/£1,000/£5,000, £1,000 in 90 days, 100 envelopes, no-spend weekends
-- Log a deposit in one tap; the progress bar and stack fill up
-- One 60-second lesson or quiz a day, with XP, levels and a streak (earned freezes)
-- Units: money mindset (inspired by The Psychology of Money), budgeting, saving, credit, pensions, tax, scams; every lesson shows its source and when it was checked
-- Milestone and completion cards to share
+- Pay schedule (weekly, fortnightly, four-weekly, monthly or irregular), bills and safe-to-spend for today, this week and until payday
+- 'Can I afford £X?' check and payday countdown
+- Subscriptions and renewals: monthly total, trial-ending and renewal reminders
+- Savings challenges: 52-week, £5-a-day, 100 envelopes, £1, 000 in 90 days, no-spend weekends; one-tap deposits; stack your leftover before payday
+- One 60-second money lesson or quiz a day with XP, levels and a forgiving streak; every lesson shows its source and when it was checked
 
 **Example:** A user starts '£1,000 in 90 days', does the morning lesson on emergency funds (+10 XP), logs £20, keeps a 40-day streak with one freeze, and shares a card when they pass £500.
 
 ## Later
 
-- Multiple active goals
-- Premium deep-dive lesson units
-- Life-event packs (first job, moving out)
-- Partner challenge (save together)
-- Seasonal challenges (Christmas fund, summer holiday)
+- Forecasts and multiple incomes
+- Home-screen widgets for safe-to-spend
+- Custom challenges and themes
+- Shareable milestone cards
+- Monthly money snapshot
 
 ## How it makes money
 
 | Model | Detail |
 |---|---|
-| Free | One active challenge and the daily lesson, with ads |
-| Premium | £2.99/month, £14.99/year or £6.99 lifetime: unlimited goals, every lesson unit, custom challenges, themes, no ads |
-| Ads | Banner only, never on the deposit or lesson screens |
+| Free | Safe-to-spend, one active challenge and the daily lesson, with ads |
+| Premium | £2.99/month, £19.99/year or a one-off lifetime price: unlimited challenges, recurring bills, subscriptions, forecasts, widgets, every lesson unit, no ads |
+| Ads | Banner only, never on the safe-to-spend number, deposits or lessons |
 
 **Portfolio premium promise:** free has ads; the moment you pay you get no ads, cloud backup and storage, and sync across your devices, plus this app's extras.
 
@@ -54,24 +54,24 @@ Built on **The Progression Loop**, the portfolio's shared retention framework
 
 | Stage | In StackUp |
 |---|---|
-| Cue | Daily lesson reminder, payday, and a weekly 'stack day' |
-| Tiny win | Finish a 60-second lesson or log a deposit in one tap |
-| Progress | Stack and progress bar, XP and levels, streak, milestones |
-| Share | Milestone, level-up and completion cards |
-| Next step | Next lesson unlocks; on completion, the next challenge is offered straight away |
+| Cue | Morning safe-to-spend glance and the daily lesson |
+| Tiny win | Stay under today's number, log a deposit or answer the quiz |
+| Progress | Days to payday, the savings stack, XP and levels |
+| Share | Milestone and challenge-complete cards |
+| Next step | Next payday, next milestone, next lesson |
 | Cadence | Daily |
 
 ## Animation and tone: five signature animations
 
 **Playful.** Celebrations, confetti, cute characters, satisfying sounds and mild comic reactions. Nothing tragic.
 
-- Deposit: a coin drops onto the stack with a clink and the stickman fist-pumps
-- Lesson right: the coin mascot does a backflip and '+10 XP' floats up (wrong: a kind 'ooh, close!')
-- Every £100: the stack wobbles, topples into a confetti pile, and the stickman dives in
-- Streak freeze used: the stickman wraps the stack in a scarf and hands it a hot chocolate
-- Challenge complete: the tower grows and the stickman throws a flag onto the top
+- Deposit: coins clink onto the stack
+- Safe-to-spend hits £0: he empties his pockets, a fly buzzes out, he scratches his head
+- Daily lesson: right answer = backflip
+- Payday: confetti and a happy dance
+- Challenge complete: the flag goes on top of the stack
 
-**Line we don't cross:** No drama about withdrawing or missing a deposit.
+**Line we don't cross:** Never shame spending; money warnings stay calm and kind.
 
 ## AI
 
@@ -79,7 +79,7 @@ Built on **The Progression Loop**, the portfolio's shared retention framework
 
 ## Watch-outs
 
-Lessons must be accurate, sourced, reviewed by a person and re-checked every April; AI can help draft but never publishes unreviewed. The Psychology of Money is used for its ideas, credited, never copied. Education and tracking, not personal advice: FCA financial-promotion rules mean no product recommendations. Users can leave after finishing a challenge, so the next challenge and the daily lesson must always be ready.
+Lessons must stay general education, never personal financial advice (FCA financial promotions): sources shown and reviewed. Safe-to-spend is only as good as what people enter, so the app says so plainly. Bigger scope than a simple tracker: ship challenges and lessons first, safe-to-spend in the next update.
 
 ## Status
 
@@ -87,5 +87,5 @@ Planning. The build spec is in [`docs/SPEC.md`](docs/SPEC.md).
 
 ---
 
-Part of a portfolio of 16 small consumer apps that share one codebase, one retention module
+Part of a portfolio of 15 small consumer apps that share one codebase, one retention module
 and one marketing and upkeep system ([growth-maintenance-engine](https://github.com/tadagambura/growth-maintenance-engine)).
