@@ -1,6 +1,6 @@
 # StackUp: Spec
 
-**Know what's safe to spend, then stack the rest** · #1 of 15 · Wave 1: Daily keepers · Used: Daily · Very easy · Revenue potential: Medium–high · Money & Work · Source: ChatGPT + Perplexity (absorbs PocketLeft, Payday, MoneyMinute and SubSpot)
+**Know what's safe to spend, then stack the rest** · #1 of 17 · Wave 1: Daily keepers · Used: Daily · Very easy · Revenue potential: Medium–high · Money & Work · Source: ChatGPT + Perplexity (absorbs PocketLeft, Payday, MoneyMinute and SubSpot)
 
 ## One-liner
 
