@@ -109,3 +109,20 @@ test('settings: delete all data really deletes it', async ({ page }) => {
   await page.goto('/stacks');
   await expect(page.getByText('No stacks yet')).toBeVisible();
 });
+
+test('themes: switch theme in Settings and it sticks; lesson library locks after 20 free cards', async ({ page }) => {
+  await page.goto('/');
+  await finishIntro(page);
+  await page.goto('/settings');
+  await page.getByTestId('theme-burgundy').click();
+  await expect(page.getByTestId('theme-burgundy')).toHaveAttribute('aria-checked', 'true');
+  await page.reload();
+  await expect(page.getByTestId('theme-burgundy')).toHaveAttribute('aria-checked', 'true');
+  await page.goto('/learn');
+  await expect(page.getByTestId('cards-progress')).toContainText('20 free');
+  await page.getByTestId('card-l21').click();
+  await expect(page.getByTestId('paywall')).toBeVisible();
+  await page.getByTestId('sheet-close').click();
+  await page.getByTestId('card-l02').click();
+  await expect(page.getByTestId('card-sheet')).toBeVisible();
+});

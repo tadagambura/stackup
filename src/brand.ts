@@ -5,6 +5,7 @@ export const brand: Brand = {
   name: 'StackUp',
   tagline: "Know what's safe to spend, then stack the rest",
   fonts: { display: 'ArchivoBlack_400Regular' },
+  defaultTheme: 'green',
   radius: 14,
   light: {
     bg: '#FBF7EE',
