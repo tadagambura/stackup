@@ -3,7 +3,7 @@ import { persisted } from './store';
 
 export type Prefs = {
   onboarded: boolean;
-  reminder: { on: boolean; hour: number; minute: number };
+  reminder: { on: boolean; hour: number; minute: number; weekday?: number };
   reduceMotion: boolean;
   setOnboarded: () => void;
   setReminder: (r: Partial<Prefs['reminder']>) => void;
