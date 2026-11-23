@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "StackUp",
+    "slug": "stackup",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "stackup",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.kaoticchainz.stackup",
+      "supportsTablet": true,
+      "config": { "usesNonExemptEncryption": false }
+    },
+    "android": {
+      "package": "com.kaoticchainz.stackup",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B6E4F",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "StackUp",
+      "themeColor": "#0B6E4F",
+      "backgroundColor": "#FBF7EE"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        { "backgroundColor": "#FBF7EE", "image": "./assets/images/splash-icon.png", "imageWidth": 120, "dark": { "backgroundColor": "#0E1310" } }
+      ],
+      ["expo-notifications", { "color": "#0B6E4F" }]
+    ],
+    "experiments": { "typedRoutes": false, "reactCompiler": true }
+  }
+}
