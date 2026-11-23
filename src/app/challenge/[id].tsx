@@ -21,6 +21,7 @@ function SlotGrid({ items, onPick, label }: { items: Slot[]; onPick: (s: Slot) =
           key={s.slot}
           accessibilityRole="checkbox"
           accessibilityState={{ checked: s.done }}
+                aria-checked={s.done}
           accessibilityLabel={`${label(s)}${s.done ? ', stacked' : ''}`}
           onPress={() => !s.done && onPick(s)}
           testID={`slot-${s.slot}`}

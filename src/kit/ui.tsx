@@ -158,6 +158,8 @@ export function Button({ title, onPress, variant = 'primary', icon, disabled, lo
       accessibilityLabel={accessibilityLabel ?? title}
       accessibilityHint={accessibilityHint}
       accessibilityState={{ disabled: !!off, busy: !!loading }}
+      aria-disabled={!!off}
+      aria-busy={!!loading}
       disabled={off}
       onPress={() => {
         tap();
@@ -277,6 +279,7 @@ export function Segmented<T extends string>({ options, value, onChange, label, t
             key={o.value}
             accessibilityRole="radio"
             accessibilityState={{ checked: on }}
+            aria-checked={on}
             accessibilityLabel={o.label}
             onPress={() => {
               tap();
@@ -298,6 +301,7 @@ export function Chip({ label, selected, onPress, icon, testID }: { label: string
     <Pressable
       accessibilityRole={onPress ? 'checkbox' : 'text'}
       accessibilityState={onPress ? { checked: !!selected } : undefined}
+      aria-checked={onPress ? !!selected : undefined}
       accessibilityLabel={label}
       disabled={!onPress}
       onPress={() => {
@@ -321,6 +325,7 @@ export function Toggle({ label, value, onChange, hint, testID }: { label: string
     <Pressable
       accessibilityRole="switch"
       accessibilityState={{ checked: value }}
+      aria-checked={value}
       accessibilityLabel={label}
       accessibilityHint={hint}
       onPress={() => {
