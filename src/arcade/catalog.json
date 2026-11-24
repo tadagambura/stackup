@@ -1,0 +1,134 @@
+{
+  "app": "stackup",
+  "title": "Money Arcade",
+  "emoji": "💰",
+  "currency": {
+    "name": "Coins",
+    "one": "coin",
+    "emoji": "🪙"
+  },
+  "unlocks": "savings-vault decorations and bonus challenge progress",
+  "games": [
+    {
+      "id": "coin-stack",
+      "name": "Coin Stack",
+      "emoji": "🪙",
+      "mechanic": "stack",
+      "tier": "free",
+      "how": "Tap to drop each coin on the tower. Line them up to keep the stack wide.",
+      "teaches": "Small, steady deposits build the tallest stacks. Savings work the same way.",
+      "seconds": 45,
+      "flagship": true,
+      "pack": {
+        "file": "stackup/coin-stack.950f193923.json",
+        "sha256": "950f19392325aa25184c9735ac83ba3f091cc865319d54dc49f276b65cbb1317",
+        "bytes": 110
+      }
+    },
+    {
+      "id": "cash-catcher",
+      "name": "Cash Catcher",
+      "emoji": "💷",
+      "mechanic": "catch",
+      "tier": "free",
+      "how": "Slide the purse to catch coins and notes. Dodge the bills and impulse buys.",
+      "teaches": "Little leaks (impulse buys, avoidable interest) quietly drain your money.",
+      "seconds": 45,
+      "pack": {
+        "file": "stackup/cash-catcher.b4a4817a31.json",
+        "sha256": "b4a4817a316c5bf54c880b90e4f38b4f9b9b611fd43d1e2351a1c37effd2773c",
+        "bytes": 374
+      }
+    },
+    {
+      "id": "money-maths",
+      "name": "Money Maths",
+      "emoji": "🧮",
+      "mechanic": "quiz",
+      "tier": "free",
+      "how": "Quick everyday money sums. Pick the right answer before time runs out.",
+      "teaches": "Fast mental maths for discounts, splits and savings.",
+      "seconds": 45,
+      "pack": {
+        "file": "stackup/money-maths.77cb57463e.json",
+        "sha256": "77cb57463e69b505cc61c8990f93901dc5ed4b26ecfb4b09d42d82a473333445",
+        "bytes": 1632
+      }
+    },
+    {
+      "id": "guess-currency",
+      "name": "Guess the Currency",
+      "emoji": "🌍",
+      "mechanic": "quiz",
+      "tier": "arcade",
+      "how": "Match each country to its currency and symbol.",
+      "teaches": "Spotting currencies helps when travelling and shopping online from abroad.",
+      "seconds": 45,
+      "pack": {
+        "file": "stackup/guess-currency.dab18793a5.json",
+        "sha256": "dab18793a5e97efbcde5864574fa237545376c6c5fe2c323806a476d91b06dfc",
+        "bytes": 1081
+      }
+    },
+    {
+      "id": "budget-builder",
+      "name": "Budget Builder",
+      "emoji": "🧾",
+      "mechanic": "sort",
+      "tier": "arcade",
+      "how": "Sort each cost into Needs, Wants or Savings.",
+      "teaches": "The 50/30/20 idea: roughly half on needs, a third on wants, a fifth saved.",
+      "seconds": 45,
+      "pack": {
+        "file": "stackup/budget-builder.45819357e7.json",
+        "sha256": "45819357e755997149e0599b5b86c66e315654750830c8049d94203ccf4fae2f",
+        "bytes": 779
+      }
+    },
+    {
+      "id": "guess-the-total",
+      "name": "Guess the Total",
+      "emoji": "🎯",
+      "mechanic": "guess",
+      "tier": "arcade",
+      "how": "How much does it add up to? Get as close as you can.",
+      "teaches": "Feel how small, regular amounts grow over time.",
+      "seconds": 45,
+      "pack": {
+        "file": "stackup/guess-the-total.ddee0a11ae.json",
+        "sha256": "ddee0a11ae4569b1af98ac7843cc5b70b7ba1eca7720bb423b577dcd5c35781f",
+        "bytes": 869
+      }
+    },
+    {
+      "id": "payday-plan",
+      "name": "Payday Sprint",
+      "emoji": "🏃",
+      "mechanic": "order",
+      "tier": "arcade",
+      "how": "Put the payday steps in the smartest order.",
+      "teaches": "Pay yourself first: bills and savings before spending, not after.",
+      "seconds": 45,
+      "pack": {
+        "file": "stackup/payday-plan.e59c836c36.json",
+        "sha256": "e59c836c3632fe84d7f98e09f0be5f4faa92fdef600af35e6c965b4251a49545",
+        "bytes": 606
+      }
+    },
+    {
+      "id": "money-word",
+      "name": "Money Word",
+      "emoji": "🔤",
+      "mechanic": "word",
+      "tier": "arcade_subscription",
+      "how": "Guess the five-letter money word in six tries. Green is right, amber is in the word.",
+      "teaches": "Money vocabulary, one word at a time.",
+      "seconds": 45,
+      "pack": {
+        "file": "stackup/money-word.797cd32498.json",
+        "sha256": "797cd324980b5d1dcb2e012076df5fe750399fa5b95e9b2b330bfc3722f42e8a",
+        "bytes": 677
+      }
+    }
+  ]
+}
