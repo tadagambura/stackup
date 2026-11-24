@@ -42,7 +42,9 @@ UK young adults and anyone living payday to payday who wants to stop running out
 | Model | Detail |
 |---|---|
 | Free | Safe-to-spend, one active challenge and the daily lesson, with ads |
-| Premium | £24.99/year (shown first) or £3.49/month, plus a one-off lifetime price to test: unlimited challenges, recurring bills, subscriptions, forecasts, widgets, every lesson unit, no ads |
+| Premium | £34.99/year (shown first) or £3.49/month: unlimited challenges, recurring bills, subscriptions, forecasts, widgets, every lesson unit, no ads, every Arcade game in the app |
+| Arcade games | £0.99 each, kept forever, or every game in the app with Premium |
+| KC All Access | £25 once (every Arcade game in every KC app, kept forever) plus £7.99/month or £79.99/year (Premium in every KC app). Needs a free KC account. |
 | Ads | Banner only, never on the safe-to-spend number, deposits or lessons |
 
 **Portfolio premium promise:** free has ads; the moment you pay you get no ads, cloud backup and storage, and sync across your devices, plus this app's extras.
