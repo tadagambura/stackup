@@ -13,6 +13,8 @@ import { SafeCard } from '@/components/SafeCard';
 import { useStack } from '@/components/useStack';
 import { pack } from '@/content/lessons';
 import { currentBalance, useChallenges, useLearn, useMoney } from '@/state/stores';
+import '@/arcade';
+import { ArcadeEntry } from '@/kit/arcade/screens';
 
 function QuickStack({ c }: { c: Challenge }) {
   const stack = useStack();
@@ -123,6 +125,7 @@ export default function Today() {
         <Strong>{lesson.title}</Strong>
         <Muted>{answered ? `${answered.correct ? 'Nailed it.' : 'Learned something.'} Back tomorrow for the next one. ${streak.current > 1 ? `${streak.current}-day learning streak.` : ''}` : `${lesson.topic} · tap to learn and take the quiz`}</Muted>
       </Card>
+      <ArcadeEntry />
     </Screen>
   );
 }
