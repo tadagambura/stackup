@@ -1,5 +1,6 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
+import { AdBanner } from '@/kit/ads';
 import { usePremium } from '@/kit/premium';
 import { formatGBP } from '@/kit/money';
 import { PaywallSheet } from '@/kit/Paywall';
@@ -23,7 +24,7 @@ export default function Stacks() {
   };
 
   return (
-    <Screen testID="stacks">
+    <Screen testID="stacks" banner={<AdBanner placement="stacks_banner" />}>
       <H1>Your stacks</H1>
       {challenges.length ? <Muted testID="stacks-total">{`${formatGBP(total, { whole: true })} stacked so far, across every challenge.`}</Muted> : null}
 
