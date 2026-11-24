@@ -120,7 +120,7 @@
       "name": "Money Word",
       "emoji": "🔤",
       "mechanic": "word",
-      "tier": "arcade_subscription",
+      "tier": "arcade",
       "how": "Guess the five-letter money word in six tries. Green is right, amber is in the word.",
       "teaches": "Money vocabulary, one word at a time.",
       "seconds": 45,
