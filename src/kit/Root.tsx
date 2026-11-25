@@ -1,6 +1,7 @@
 // Kaotic Chainz app kit: generated copy. Edit in app-portfolio/kit, then run scripts/sync-kit.sh.
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
+import { Platform } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AdsProvider } from './ads';
 import { AllAccessOffer } from './AllAccessOffer';
@@ -10,6 +11,8 @@ import { revenueCatClient, revenueCatKey } from './billing.revenuecat';
 import { CelebrateProvider } from './celebrate';
 import { FeedbackProvider } from './feedback';
 import { PremiumProvider } from './premium';
+import { KCStartup } from './startup';
+import { finishStartup, startupFinished } from './startup/state';
 import { ThemeProvider, useTheme, type Brand } from './theme';
 
 import { TEST_MODE } from './env';
@@ -36,10 +39,15 @@ export function billingFor(app: string): { billing: Billing; test: TestControls 
   return shared;
 }
 
+// Browser journeys run the web build in test mode: they start straight on the app.
+const SKIP_STARTUP = Platform.OS === 'web' && process.env.EXPO_PUBLIC_TEST_MODE === '1';
+if (SKIP_STARTUP) finishStartup();
+
 /** `onSignIn` opens KC account sign-in once accounts exist; until then All Access says "coming soon". */
 export function KitRoot({ brand, children, onSignIn }: { brand: Brand; children: ReactNode; onSignIn?: () => void }) {
   useEffect(() => initAnalytics(brand.slug), [brand.slug]);
   const { billing, test } = billingFor(brand.slug);
+  const [intro, setIntro] = useState(() => !startupFinished());
   return (
     <SafeAreaProvider>
       <PremiumProvider app={brand.slug} appName={brand.name} billing={billing} test={test} onSignIn={onSignIn}>
@@ -49,7 +57,16 @@ export function KitRoot({ brand, children, onSignIn }: { brand: Brand; children:
               <CelebrateProvider app={brand.slug}>
                 <Bar />
                 {children}
-                <AllAccessOffer />
+                {intro ? (
+                  <KCStartup
+                    onDone={() => {
+                      finishStartup();
+                      setIntro(false);
+                    }}
+                  />
+                ) : (
+                  <AllAccessOffer />
+                )}
               </CelebrateProvider>
             </AdsProvider>
           </FeedbackProvider>
