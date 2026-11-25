@@ -23,6 +23,7 @@ import { sdk } from './sdk';
 import type { SdkEvent } from './sdk.types';
 import { envUnits } from './units';
 import { SdkBanner, SdkNative, viewsSupported } from './views';
+import { whenStartupDone } from '../startup/state';
 
 const PLATFORM = Platform.OS === 'ios' ? 'ios' : Platform.OS === 'android' ? 'android' : 'web';
 /** Shows dashed placeholders where ads go, on web, for checking placements: EXPO_PUBLIC_ADS_PREVIEW=1. */
@@ -72,7 +73,8 @@ export function AdsProvider({ app, children }: { app: string; children: ReactNod
 
   // Consent and ads start after onboarding, so the first thing anyone sees is the app, not a form.
   useEffect(() => {
-    if (ready && !isPremium && onboarded) void m.start();
+    // Not before the start-up animation ends: the app-open ad would cover it.
+    if (ready && !isPremium && onboarded) void whenStartupDone().then(() => m.start());
   }, [m, ready, isPremium, onboarded]);
 
   useEffect(() => {

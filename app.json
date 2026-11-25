@@ -35,7 +35,7 @@
       "expo-font",
       [
         "expo-splash-screen",
-        { "backgroundColor": "#FBF7EE", "image": "./assets/images/splash-icon.png", "imageWidth": 120, "dark": { "backgroundColor": "#0E1310" } }
+        { "backgroundColor": "#151412", "image": "./assets/images/splash-icon.png", "imageWidth": 120, "dark": { "backgroundColor": "#151412" } }
       ],
       ["expo-notifications", { "color": "#0B6E4F" }]
     ],
